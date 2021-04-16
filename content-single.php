@@ -17,7 +17,7 @@ $fallback_image = of_get_option( 'fallback_image', get_template_directory_uri().
 
 		<div class="entry-meta clearfix">
             <?php echo $post_categories = get_the_category_list(); ?>
-            <span class="data tag"> Publicado em <?php echo $date_create = get_the_date('j \d\e F \d\e Y'); ?> </span>
+            <span class="data tag"> Publicado em  <?php echo the_date('j \d\e F \d\e Y \à\s H:i:s'); ?> </span>
           			<?php do_action( 'accesspress_mag_post_meta' );?>
 		</div><!-- .entry-meta -->
          
